@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="params">
+      <div>
+        <label for="inputLevel">目標レベル</label>
+        <input type="number" id="inputLevel" placeholder="50" />
+      </div>
+      <div>
+        <label for="inputGroup">経験値タイプ</label>
+        <select id="inputGroup">
+          <option value="0">60万タイプ</option>
+          <option value="1">80万タイプ</option>
+          <option value="2">100万タイプ</option>
+          <option value="3">105万タイプ</option>
+          <option value="4">125万タイプ</option>
+          <option value="5">164万タイプ</option>
+        </select>
+      </div>
+      <div>
+        <label for="inputNowExp">現在の経験値</label>
+        <input type="number" id="inputNowExp" placeholder="0" />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>アメ</th>
+            <th>使う</th>
+            <th>使用数上限</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for="use-exp-candy-xl">けいけんアメXL</label></td>
+            <td><input type="checkbox" checked id="use-exp-candy-xl" /></td>
+            <td>
+              <input type="number" id="limit-exp-candy-xl" placeholder="制限なし" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="use-exp-candy-l">けいけんアメL</label></td>
+            <td><input type="checkbox" checked id="use-exp-candy-l" /></td>
+            <td>
+              <input type="number" id="limit-exp-candy-l" placeholder="制限なし" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="use-exp-candy-m">けいけんアメM</label></td>
+            <td><input type="checkbox" checked id="use-exp-candy-m" /></td>
+            <td>
+              <input type="number" id="limit-exp-candy-m" placeholder="制限なし" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="use-exp-candy-s">けいけんアメS</label></td>
+            <td><input type="checkbox" checked id="use-exp-candy-s" /></td>
+            <td>
+              <input type="number" id="limit-exp-candy-s" placeholder="制限なし" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="use-exp-candy-xs">けいけんアメXS</label></td>
+            <td><input type="checkbox" checked id="use-exp-candy-xs" /></td>
+            <td>
+              <input type="number" id="limit-exp-candy-xs" placeholder="制限なし" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button type="submit" id="calc">計算</button>
+    </form>
+
+    <div id="results"></div>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
